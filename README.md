@@ -1,3 +1,19 @@
+# 🌐 Portfólio Profissional
+
+Portfólio desenvolvido como atividade avaliativa da disciplina de Programação Web do curso de Tecnólogo em Sistemas para Internet — UESPI (EAD).
+
+---
+
+## 🚀 Acesse o projeto
+
+🔗 Repositório no GitHub:  
+https://github.com/claudianafsc78-arch/meu-portfolio  
+
+🌍 Projeto publicado (GitHub Pages):  
+https://claudianafsc78-arch.github.io/meu-portfolio/
+
+---
+
 ## ✅ Requisitos atendidos
 
 ✔ Estrutura semântica com <header>, <section> e <footer>  
