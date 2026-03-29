@@ -3,7 +3,15 @@
 Portfólio desenvolvido como atividade avaliativa da disciplina de Programação Web do curso de Tecnólogo em Sistemas para Internet — UESPI (EAD).
 
 ---
+## 🚀 Projetos
 
+### Autoestima & Aceitação de Si
+🔗 GitHub: https://github.com/claudianafsc78-arch/meu-portfolio  
+🌍 Site: https://claudianafsc78-arch.github.io/meu-portfolio/
+
+### Outro Projeto (exemplo)
+🔗 GitHub: link-aqui  
+🌍 Site: link-aqui
 ## 🚀 Acesse o projeto
 
 🔗 Repositório no GitHub:  
