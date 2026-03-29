@@ -17,7 +17,7 @@ https://claudianafsc78-arch.github.io/meu-portfolio/
 ## ✅ Requisitos atendidos
 
 ✔ Estrutura semântica com header section footer  
-✔ Menu de navegação com links para as seções  
+✔ Menu de navegação com links para seções  
 ✔ Seção "Sobre mim" com informações pessoais  
 ✔ Seção "Meus Projetos" renderizada dinamicamente com JavaScript  
 ✔ Uso de array de objetos para os projetos  
