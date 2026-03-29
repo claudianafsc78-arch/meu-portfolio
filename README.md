@@ -51,7 +51,7 @@ https://claudianafsc78-arch.github.io/meu-portfolio/
 
 ## 👩‍💻 Autora
 
-**Claudiana Ferreira da Silva Carvalho**  
+**Claudiana Ferreira da Silva**  
 Estudante do curso de Tecnólogo em Sistemas para Internet — UESPI (EAD)
 
 *"Entrei na área de TI por gostar de desafios e ter vontade de aprender coisas novas."*
