@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Claudiana Silva Carvalho | Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --pink:        #e91e8c;
+      --pink-light:  #f472b6;
+      --pink-pale:   #fce7f3;
+      --purple:      #7c3aed;
+      --purple-dark: #4c1d95;
+      --purple-light:#ddd6fe;
+      --dark:        #0f0a1e;
+      --dark2:       #1a1035;
+      --white:       #ffffff;
+      --font-display: 'Playfair Display', serif;
+      --font-body:    'DM Sans', sans-serif;
+      --radius:       16px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      background: var(--dark);
+      color: var(--white);
+      overflow-x: hidden;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    .section-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--pink);
+      margin-bottom: 0.75rem;
+      font-weight: 500;
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.1;
+      background: linear-gradient(135deg, var(--white) 30%, var(--pink-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1rem;
+    }
+    .section-desc {
+      color: #a78bfa;
+      margin-bottom: 2.5rem;
+      font-size: 1.05rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      border-radius: 50px;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: none;
+    }
+    .btn:hover { transform: translateY(-3px); }
+    .btn--primary {
+      background: linear-gradient(135deg, var(--pink), var(--purple));
+      color: var(--white);
+      box-shadow: 0 4px 20px rgba(233,30,140,0.4);
+    }
+    .btn--primary:hover { box-shadow: 0 8px 30px rgba(233,30,140,0.5); }
+    .btn--outline {
+      border: 2px solid var(--purple-light);
+      color: var(--purple-light);
+      background: transparent;
+    }
+    .btn--outline:hover { background: rgba(124,58,237,0.15); }
+
+    /* HEADER */
+    .header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(15,10,30,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(124,58,237,0.2);
+    }
+    .header__inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items
