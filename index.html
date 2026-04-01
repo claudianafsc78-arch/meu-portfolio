@@ -3,66 +3,82 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfólio Claudiana</title>
+<title>Claudiana | Portfólio</title>
 
 <style>
-body {
+* {
     margin: 0;
-    font-family: Arial;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
 }
 
 /* HEADER */
 header {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background: rgba(0,0,0,0.2);
+    padding: 20px 50px;
+    background: #020617;
+    position: sticky;
+    top: 0;
 }
 
 nav a {
-    color: white;
-    margin-left: 15px;
+    color: #cbd5f5;
+    margin-left: 20px;
     text-decoration: none;
+    font-weight: 500;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero span {
+    color: #38bdf8;
 }
 
 /* SECTIONS */
 section {
-    padding: 40px;
+    padding: 60px 20px;
     text-align: center;
 }
 
-/* CARDS */
-.card {
-    background: white;
-    color: black;
+/* PROJETOS */
+#projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
     padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    width: 250px;
 }
 
-/* FLEX */
-#projetos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 /* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
-    background: rgba(0,0,0,0.2);
-}
-
-/* RESPONSIVO */
-@media (max-width: 600px) {
-    #projetos {
-        flex-direction: column;
-        align-items: center;
-    }
+    background: #020617;
 }
 </style>
 </head>
@@ -77,11 +93,16 @@ footer {
     </nav>
 </header>
 
+<div class="hero">
+    <h1>Olá, eu sou <span>Claudiana</span> 👋</h1>
+    <p>Estudante de TI | Construindo meu futuro na tecnologia</p>
+</div>
+
 <section id="sobre">
     <h2>Sobre mim</h2>
     <p>
-        Sou estudante de TI, apaixonada por aprender coisas novas e desafios.
-        Sou mãe, esposa e trabalho home office.
+        Sou estudante de Tecnologia da Informação, apaixonada por aprender,
+        enfrentar desafios e crescer na área de tecnologia.
     </p>
 </section>
 
@@ -101,15 +122,15 @@ const projetos = [
         descricao: "Site desenvolvido com HTML, CSS e JavaScript"
     },
     {
-        nome: "Projeto em desenvolvimento",
-        descricao: "Novos projetos em breve"
+        nome: "Projeto futuro",
+        descricao: "Novos projetos em desenvolvimento"
     }
 ];
 
-const area = document.getElementById("projetos");
+const container = document.getElementById("projetos");
 
 projetos.forEach(p => {
-    area.innerHTML += `
+    container.innerHTML += `
         <div class="card">
             <h3>${p.nome}</h3>
             <p>${p.descricao}</p>
