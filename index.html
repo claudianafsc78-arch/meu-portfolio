@@ -2,42 +2,39 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfólio Claudiana</title>
 
 <style>
 body {
-    font-family: Arial;
     margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
     text-align: center;
 }
 
-/* Cabeçalho */
 header {
-    background: #6a11cb;
-    color: white;
+    padding: 50px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.container {
     padding: 20px;
 }
 
-/* Seções */
-section {
+.card {
+    background: white;
+    color: black;
+    margin: 20px auto;
     padding: 20px;
+    width: 300px;
+    border-radius: 15px;
 }
 
-/* Projetos */
-#projetos div {
-    background: #f4f4f4;
-    margin: 10px auto;
-    padding: 15px;
-    width: 250px;
-    border-radius: 10px;
-}
-
-/* Rodapé */
 footer {
-    background: #333;
-    color: white;
-    padding: 10px;
+    margin-top: 30px;
+    padding: 15px;
 }
 </style>
 </head>
@@ -45,35 +42,47 @@ footer {
 <body>
 
 <header>
-    <h1>Claudiana Silva Carvalho</h1>
+👩‍💻 Claudiana Silva Carvalho
 </header>
 
-<section>
-    <h2>Sobre mim</h2>
-    <p>Sou estudante de TI, gosto de desafios e aprender coisas novas.</p>
-</section>
+<div class="container">
 
-<section>
-    <h2>Meus Projetos</h2>
-    <div id="projetos"></div>
-</section>
+<div class="card">
+<h2>Sobre mim</h2>
+<p>Sou estudante de TI, apaixonada por aprender coisas novas e desafios.</p>
+</div>
+
+<h2>Meus Projetos</h2>
+
+<div id="projetos"></div>
+
+</div>
 
 <footer>
-    <p>© 2026 - Claudiana</p>
+<p>© 2026 - Claudiana</p>
 </footer>
 
 <script>
 const projetos = [
-    { nome: "Portfólio", descricao: "Meu primeiro site" },
-    { nome: "Projeto 2", descricao: "Em desenvolvimento" }
+    {
+        nome: "Meu Portfólio",
+        descricao: "Projeto feito com HTML, CSS e JavaScript"
+    },
+    {
+        nome: "Projeto em andamento",
+        descricao: "Ainda estou desenvolvendo"
+    }
 ];
 
-const area = document.getElementById("projetos");
+const container = document.getElementById("projetos");
 
-projetos.forEach(function(p) {
-    const item = document.createElement("div");
-    item.innerHTML = "<h3>" + p.nome + "</h3><p>" + p.descricao + "</p>";
-    area.appendChild(item);
+projetos.forEach(p => {
+    container.innerHTML += `
+        <div class="card">
+            <h3>${p.nome}</h3>
+            <p>${p.descricao}</p>
+        </div>
+    `;
 });
 </script>
 
