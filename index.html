@@ -1,92 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Claudiana | Portfólio</title>
-
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background: #0f172a;
-    color: #e2e8f0;
-}
-
-/* HEADER */
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 50px;
-    background: #020617;
-    position: sticky;
-    top: 0;
-}
-
-nav a {
-    color: #cbd5f5;
-    margin-left: 20px;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-/* HERO */
-.hero {
-    text-align: center;
-    padding: 80px 20px;
-}
-
-.hero h1 {
-    font-size: 40px;
-}
-
-.hero span {
-    color: #38bdf8;
-}
-
-/* SECTIONS */
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-/* PROJETOS */
-#projetos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.card {
-    background: #1e293b;
-    padding: 20px;
-    border-radius: 12px;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #020617;
-}
-</style>
-</head>
-
-<body>
-
 <header>
-    <h2>Claudiana</h2>
+    <h2 style="font-size: 24px;">CSC</h2>
     <nav>
         <a href="#sobre">Sobre</a>
         <a href="#projetos">Projetos</a>
@@ -94,50 +7,8 @@ footer {
 </header>
 
 <div class="hero">
-    <h1>Olá, eu sou <span>Claudiana</span> 👋</h1>
-    <p>Estudante de TI | Construindo meu futuro na tecnologia</p>
-</div>
-
-<section id="sobre">
-    <h2>Sobre mim</h2>
-    <p>
-        Sou estudante de Tecnologia da Informação, apaixonada por aprender,
-        enfrentar desafios e crescer na área de tecnologia.
+    <h1>Claudiana Silva Carvalho</h1>
+    <p style="color:#6a11cb; font-weight: bold;">
+        CSC — Sua marca na tecnologia
     </p>
-</section>
-
-<section>
-    <h2>Meus Projetos</h2>
-    <div id="projetos"></div>
-</section>
-
-<footer>
-    <p>© 2026 - Claudiana Silva Carvalho</p>
-</footer>
-
-<script>
-const projetos = [
-    {
-        nome: "Portfólio",
-        descricao: "Site desenvolvido com HTML, CSS e JavaScript"
-    },
-    {
-        nome: "Projeto futuro",
-        descricao: "Novos projetos em desenvolvimento"
-    }
-];
-
-const container = document.getElementById("projetos");
-
-projetos.forEach(p => {
-    container.innerHTML += `
-        <div class="card">
-            <h3>${p.nome}</h3>
-            <p>${p.descricao}</p>
-        </div>
-    `;
-});
-</script>
-
-</body>
-</html>
+</div>
