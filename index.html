@@ -1,1 +1,81 @@
-<h1>TESTE CLAUDIA</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Portfólio Claudiana</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+}
+
+header {
+    padding: 50px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card {
+    background: white;
+    color: black;
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+    border-radius: 15px;
+}
+
+footer {
+    padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+👩‍💻 Claudiana Silva Carvalho
+</header>
+
+<div class="card">
+<h2>Sobre mim</h2>
+<p>Sou estudante de TI, gosto de aprender coisas novas e desafios.</p>
+</div>
+
+<h2>Meus Projetos</h2>
+
+<div id="projetos"></div>
+
+<footer>
+<p>© 2026 - Claudiana</p>
+</footer>
+
+<script>
+const projetos = [
+    {
+        nome: "Meu Portfólio",
+        descricao: "Projeto feito com HTML, CSS e JavaScript"
+    },
+    {
+        nome: "Projeto em andamento",
+        descricao: "Ainda estou desenvolvendo"
+    }
+];
+
+const container = document.getElementById("projetos");
+
+projetos.forEach(p => {
+    container.innerHTML += `
+        <div class="card">
+            <h3>${p.nome}</h3>
+            <p>${p.descricao}</p>
+        </div>
+    `;
+});
+</script>
+
+</body>
+</html>
