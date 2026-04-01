@@ -57,18 +57,9 @@ meu-portfolio/
 
 ---
 
-## ▶️ Como visualizar localmente
-```bash
-# 1. Clone o repositório
-git clone https://github.com/claudianafsc78-arch/meu-portfolio.git
+## ▶️ Visualizar Portfolio
 
-# 2. Acesse a pasta
-cd meu-portfolio
-
-# 3. Abra o arquivo no navegador
-# Basta abrir o index.html direto no browser
-# ou usar a extensão Live Server no VS Code
-```
+🌐 **[Clique aqui para acessar o portfólio](https://claudianafsc78-arch.github.io/meu-portfolio/)**
 
 ---
 
