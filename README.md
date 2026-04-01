@@ -6,7 +6,7 @@
 
 <div align="center">
 
-# ✨ Portfólio Profissional
+# ✨ Portfólio
 
 **`HTML5 · CSS3 · JavaScript · React · Git & GitHub`**
 
@@ -31,7 +31,7 @@ Mãe, esposa, estudo e trabalho — faço tudo com amor e determinação. Para m
 
 | 🗂️ Projeto | 📝 Descrição | 🛠️ Tecnologias |
 |---|---|---|
-| ✨ **Portfolio Profissional** | Este próprio portfólio! Design responsivo em esquema rosa e roxo, com array dinâmico de projetos em JavaScript. | HTML5 · CSS3 · JavaScript |
+| ✨ **Portfólio** | Este próprio portfólio! Design responsivo em esquema rosa e roxo, com array dinâmico de projetos em JavaScript. | HTML5 · CSS3 · JavaScript |
 
 ---
 
