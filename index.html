@@ -9,16 +9,16 @@
 body {
     margin: 0;
     font-family: Arial;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
 }
 
-/* MENU */
+/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
+    padding: 20px;
+    background: rgba(0,0,0,0.2);
 }
 
 nav a {
@@ -27,7 +27,7 @@ nav a {
     text-decoration: none;
 }
 
-/* SEÇÕES */
+/* SECTIONS */
 section {
     padding: 40px;
     text-align: center;
@@ -37,33 +37,31 @@ section {
 .card {
     background: white;
     color: black;
-    margin: 20px auto;
     padding: 20px;
-    width: 300px;
-    border-radius: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 250px;
 }
 
-/* PROJETOS */
+/* FLEX */
 #projetos {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-/* RODAPÉ */
+/* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
+    background: rgba(0,0,0,0.2);
 }
 
 /* RESPONSIVO */
 @media (max-width: 600px) {
-    header {
-        flex-direction: column;
-    }
-
     #projetos {
         flex-direction: column;
+        align-items: center;
     }
 }
 </style>
@@ -71,55 +69,47 @@ footer {
 
 <body>
 
-<!-- CABEÇALHO -->
 <header>
-    <h2>👩‍💻 Claudiana</h2>
+    <h2>Claudiana</h2>
     <nav>
         <a href="#sobre">Sobre</a>
         <a href="#projetos">Projetos</a>
     </nav>
 </header>
 
-<!-- SOBRE -->
 <section id="sobre">
     <h2>Sobre mim</h2>
-    <div class="card">
-        <p>
-        Olá! Meu nome é Claudiana Silva Carvalho.  
-        Sou estudante de TI, apaixonada por aprender e enfrentar desafios.  
-        Sou mãe, esposa e trabalho em home office.
-        </p>
-    </div>
+    <p>
+        Sou estudante de TI, apaixonada por aprender coisas novas e desafios.
+        Sou mãe, esposa e trabalho home office.
+    </p>
 </section>
 
-<!-- PROJETOS -->
-<section id="projetos-section">
+<section>
     <h2>Meus Projetos</h2>
     <div id="projetos"></div>
 </section>
 
-<!-- RODAPÉ -->
 <footer>
     <p>© 2026 - Claudiana Silva Carvalho</p>
 </footer>
 
-<!-- JAVASCRIPT -->
 <script>
 const projetos = [
     {
-        nome: "Meu Portfólio",
-        descricao: "Site criado com HTML, CSS e JavaScript"
+        nome: "Portfólio",
+        descricao: "Site desenvolvido com HTML, CSS e JavaScript"
     },
     {
-        nome: "Projeto em andamento",
-        descricao: "Estou desenvolvendo novos projetos"
+        nome: "Projeto em desenvolvimento",
+        descricao: "Novos projetos em breve"
     }
 ];
 
-const container = document.getElementById("projetos");
+const area = document.getElementById("projetos");
 
 projetos.forEach(p => {
-    container.innerHTML += `
+    area.innerHTML += `
         <div class="card">
             <h3>${p.nome}</h3>
             <p>${p.descricao}</p>
