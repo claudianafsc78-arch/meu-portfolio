@@ -36,3 +36,60 @@ Mãe, esposa, estudo e trabalho — faço tudo com amor e determinação. Para m
 ---
 
 ## 🛠️ Habilidades
+```
+HTML5             ████░░░░░░░░░░░░░░░░ Iniciante
+CSS3              ████░░░░░░░░░░░░░░░░ Iniciante
+Design Responsivo ███░░░░░░░░░░░░░░░░░ Iniciante
+Git & GitHub      ███░░░░░░░░░░░░░░░░░ Iniciante
+JavaScript        ██░░░░░░░░░░░░░░░░░░ Iniciante
+React             ██░░░░░░░░░░░░░░░░░░ Iniciante
+```
+
+---
+
+## 📁 Estrutura do Projeto
+```
+meu-portfolio/
+├── index.html       # Página principal (HTML5 semântico)
+├── README.md        # Documentação do projeto
+└── assets/          # (imagens e recursos futuros)
+```
+
+---
+
+## ▶️ Como visualizar localmente
+```bash
+# 1. Clone o repositório
+git clone https://github.com/claudianafsc78-arch/meu-portfolio.git
+
+# 2. Acesse a pasta
+cd meu-portfolio
+
+# 3. Abra o arquivo no navegador
+# Basta abrir o index.html direto no browser
+# ou usar a extensão Live Server no VS Code
+```
+
+---
+
+## 📬 Contato
+
+<div align="center">
+
+| Canal | Link |
+|---|---|
+| 🐙 GitHub | [@claudianafsc78-arch](https://github.com/claudianafsc78-arch) |
+| 🌐 Portfolio | [claudianafsc78-arch.github.io/meu-portfolio](https://claudianafsc78-arch.github.io/meu-portfolio/) |
+| ✉️ Email | claudiana@email.com |
+
+</div>
+
+---
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24&height=100&section=footer" width="100%"/>
+
+Feito com ♥ por **Claudiana Silva Carvalho** &nbsp;·&nbsp; UESPI — Tecnologia em Sistemas para Internet
+
+</div>
